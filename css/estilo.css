@@ -36,22 +36,30 @@ header{
 }
 
 nav{
-    text-align: right;
-    padding: 30px 50px 0 0;
-    font-size: 24px;
+    text-align: right ;
+    padding: 30px 50px 0 0 ;
+    font-size: 24px ;
 }
 
 nav > a{
-    color: white;
-    font-weight: 300;
-    text-decoration: none;
-    font-size: 24px;
-    margin-right: 10px;
+    color: white ;
+    font-weight: 300 ;
+    text-decoration: none ;
+    font-size: 24px ;
+    margin-right: 10px ;
 }
 
 nav > a:hover{
     text-decoration: underline;
 }
+
+nav > menu{
+    text-align: right !important;
+    padding: 30px 50px 0 0 !important;
+    font-size: 24px !important;
+    
+}
+
 
 header .textos-header{
     display: flex;
@@ -185,10 +193,12 @@ header .textos-header{
 }
 
 /* Clients */
+
 .cards{
     display: flex;
     justify-content: space-evenly;
 }
+
 
 .cards .card{
     background: #4d0686;
@@ -197,8 +207,9 @@ header .textos-header{
     height: 200px;
     align-items: center;
     justify-content: space-evenly;
-    border-radius: 5px;
+    border-radius: 2000px;
     box-shadow: 0 0 6px 0 rgba(0 , 0, 0, .6);
+  
 }
 
 .cards .card img{
@@ -218,6 +229,7 @@ header .textos-header{
 .cards .card > .contenido-texto-card p{
     font-weight: 300;
     padding-top: 5px;
+    
 }
 
 /*Our Team */
