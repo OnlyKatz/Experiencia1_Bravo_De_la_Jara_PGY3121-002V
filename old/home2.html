@@ -61,7 +61,7 @@
         </script>
         <script type="text/javascript">
             function animal(){
-            let a=['Gato', 'Perro', 'Hurón', 'Erizo', 'Guacamayo', 'Capibara', 'Triceratops', 'Lobo', 'Oso', 'Conejo', 'Mapache', 'Leon', 'Pato']; 
+            let a=['Gato', 'Perro', 'Hurón', 'Erizo', 'Guacamayo', 'Capibara', 'Triceratops']; 
                 var randN = ~~(Math.random()*a.length);         
                 var animald = a[randN];
                 alert("Hoy eres un: "+animald);
@@ -192,56 +192,6 @@
                 </form>
             </div>
             </fieldset>
-        </section>
-        <section>
-            <fieldset class="newsletter">
-            <div class="code-wrapper">
-                <span class="code"></span>
-                <button type="submit" class='btn btn-primary' id="enviar" value="Enviar">¡Actualizar!</button>
-                </div>
-                <div class="try">
-                <div class="json">
-                <div class="image-content">
-                </div>
-                </div>
-                </div>
-                <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-              <script>
-                (adsbygoogle = window.adsbygoogle || []).push({});
-                </script>
-                </div>
-                <script>
-                (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-                (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-                m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-                })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-                
-                ga('create', 'UA-98107378-1', 'auto');
-                ga('send', 'pageview');
-                
-                </script>
-                <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
-                <script>
-                if (typeof jQuery == 'undefined') {
-                    document.write(unescape("%3Cscript src='/js/vendor/jquery-3.4.1.min.js' type='text/javascript'%3E%3C/script%3E"));
-                }
-                </script>
-                <script src="/js/main.js"></script> <script>
-                        function getDog(){
-                            $.getJSON("https://dog.ceo/api/breeds/image/random", function( data ) {
-                                $(".json pre").html(JSON.stringify(data, null, 4));
-                                $(".image-content").html("<img src='" + data.message + "'>");
-                            });
-                        }
-                        $('.btn').click(function(){
-                            getDog();
-                        });
-                
-                        $(document).ready(function() {
-                            getDog();
-                        });
-                    </script>
-                </fieldset>
         </section>
     </main>
     <footer>

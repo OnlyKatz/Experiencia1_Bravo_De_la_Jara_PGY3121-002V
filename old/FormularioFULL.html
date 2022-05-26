@@ -1,0 +1,106 @@
+<!DOCTYPE html> 
+<html> 
+  <head> 
+    <title>Prueba de Bootstrap</title> 
+    <meta charset="utf-8">
+    <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link href="css/estilos.css" type="text/css" rel="stylesheet"> 
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.17.0/jquery.validate.js"></script>
+
+
+<script type ="text/javascript">
+  $(document).ready(function(){
+    $("#error").hide();
+
+    $("#formulario").submit(function(){
+      var mensaje ="";
+      if($("#nombre").val().trim().length==0){
+        mensaje = "El nombre no puede estar en blanco";
+      }
+      if($("#apellido").val().trim().length==0){
+        mensaje = "El apellido no puede estar en blanco";
+      }
+      if(!document.querySelector('input[name ="grupo2"]:checked')){
+        mensaje = "Selecciona rut o pasaporte";
+        hasError = true;
+      }
+      if(mensaje !=""){
+        $("#error").html(mensaje);
+        $("#error").show();
+        event.preventDefault();
+      }
+    });
+  })
+</script>
+
+</head> 
+<body> 
+   <div class="container">
+    <form method="post" action="procesar.php" id="formulario">
+      <div class="form-group"> 
+          <br>
+          <br>
+        <label for="nombre">Nombres:</label>
+        <input type="text" class="form-control" id="nombre" name="nombre" placeholder="Ingrese sus nombres">
+      </div> 
+
+        <div class="form-group"> 
+          <label for="apellido">Apellidos:</label>
+          <input type="text" class="form-control" id="apellido" placeholder="Ingrese sus apellidos">
+        </div>
+
+
+        <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" value="Rut" id="radio4" name="grupo2">
+            <label class="form-check-label" for="radio4">
+              Rut
+            </label>
+          </div>
+    
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" value="Pasaporte" id="radio4" name="grupo2">
+            <label class="form-check-label" for="radio4">
+              Pasaporte
+            </label>
+      </div>
+      <br>
+      <br>
+      <div class="form-group"> 
+            <label for="rutPasaporte">Rut o Pasaporte:</label>
+            <input type="Text" class="form-control" id="rut" placeholder="Ingrese su rut o pasaporte">
+          </div> 
+
+          <div class="form-group"> 
+            <label for="telefono">Teléfono:</label>
+            <input type="tel" class="form-control" id="telefono" placeholder="Ingresa tu número de teléfono">
+          </div> 
+
+          <div class="form-group">          
+            <label for="control1">Seleccione Ciudad de Residencia</label> 
+            <select class="form-control" id="control1" name="control1"> 
+                <option>Santiago</option> 
+                <option>Temuco</option>
+                <option>Valparaiso</option> 
+                <option>La Serena</option> 
+                <option>Licanray</option> 
+            </select> 
+          </div>
+
+          <div class="form-group"> 
+            <label for="comentarios">Deje aquí sus comentarios</label>
+            <textarea class="form-control" rows="5" id="comentarios" name="comentarios" placeholder="Dejanos un comentario"></textarea>
+          </div> 
+
+          <button type="submit" class="btn btn-primary" id="enviar" value="Enviar">Enviar</button>   <button type="reset" class="btn btn-secondary">Limpiar</button> 
+          <div id="error" class="alert alert-danger" role="alert"></div>
+</form>
+</div> 
+</body> 
+</html> 
