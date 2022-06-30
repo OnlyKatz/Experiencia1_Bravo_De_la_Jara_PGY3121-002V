@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    {% load static %}
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Free of Lice</title>
+    <link rel="icon" href="img/perro-pastor.png"/>
+    <link rel="stylesheet" href="{% static 'core/css/estilo.css'%}">
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="{% url 'home'%}">Inicio</a>
+            <a href="{% url 'somos'%}">Somos</a>
+            <a href="{% url 'galeria'%}">Galeria</a>
+            <a href="{% url 'formulario'%}">Contacto</a>
+            <a href="{% url 'mostrar'%}">Ingresados</a>
+            <a href="{% url 'consumo'%}">API</a>
+        </nav>
+    <section class="textos-header">
+            <h1>¿Quiénes somos?</h1>
+    </section>
+        <div class="wave" style="height: 150px; overflow: hidden;" ><svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;"><path d="M0.00,49.99 C211.85,177.14 274.49,-61.67 500.00,49.99 L500.00,150.00 L0.00,150.00 Z" style="stroke: none; fill: #fff;"></path></svg></div>
+        
+    </header>
+    <main>
+        <section class="contenedor sobre-nosotros">
+            <div class="contenedor-sobre-nosotros">
+                <img src="{% static 'core/img/perro-gato-conejo.png'%}" alt="" class="imagen-about-us" width="500px" height="600px">
+                <div class="contenido-textos">
+                    <h3><span>1</span>Objetivo</h3>
+                    <p>Free of Lice tiene como objetivo la facil obtención de implementos y productos para mascotas a un bajo costo y con despachos.</p>
+                    <h3><span>2</span>Empresa</h3>
+                    <p>Nuestro proyecto Free of Lice, nace de la idea de mejorar y ser los mejores en lo que a productos de mascotas se refiere.
+                        Aportando con productos esenciales, para personas exigentes y animales con requerimientos especiales.
+                        Esperando aumentar nuestro rubro, nos encontramos en constante aprendizaje y crecimiento.
+                    </p>
+                    <h3><span>3</span>Misión y Visión</h3>
+                    <p>Nuestra misión es mejorar la adquisición de productos para mascotas, aportando un gran catalogo de productos, además incluyendo despachos para una mejor y rapida experiencia de compra.
+                        Como visión Free of Lice espera conseguir marcas de mayor renombre y mejores productos, aumentando con ello más y más familias felices.</p>
+                </div>
+            </div>
+        </section>
+        <section class="centro">
+            <section class="altura">
+                <section class="container-fluid">
+                    <h2 class="titulo">La importancia de una mascota en nuestras vidas</h2>
+                    <iframe width="600" height="320" src="https://youtube.com/embed/eMXlXQwsXsY" title="YouTube video player"
+                    frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+                    </iframe>
+                </section>
+            </section>
+        </section>
+        <hr class="container">
+        <section class="clientes contenedor">
+            <h2 class="titulo">Que dicen nuestros clientes:</h2>
+            <h4>Con su debida autorización..</h4>
+            <div class="cards">
+                <div class="card">
+                <img src="{% static 'core/img/persona1.png'%}" alt="" width="500px" height="500px">
+                <div class="contenido-texto-card">
+                    <h4>Patricio Olguin</h4>
+                    <p>"He quedado muy conforme con los productos que he comprado para mi mascota en esta tienda, recomendada."</p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="{% static 'core/img/persona3.png'%}" alt="" width="500px" height="500px">
+                <div class="contenido-texto-card">
+                    <h4>Daniela Sanchez</h4>
+                    <p>"En esta tienda he encontrado lo que en otras no, la encuentro más exclusiva, muy recomendada."</p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="{% static 'core/img/persona2.png'%}" alt="">
+                <div class="contenido-texto-card">
+                    <h4>Andrés Fuentes</h4>
+                    <p>"Productos de muy buena calidad y resistentes a todo, toda mi familia ha comprado aquí y todos muy conformes, nada que decir."</p>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="contenedor-footer">
+            <div class="content-foo">
+                <h4>Tel&eacute;fono</h4>
+                <p>+56987543562</p>
+            </div>
+            <div class="content-foo">
+                <h4>Correo</h4>
+                <p>freeoflice@gmail.cl</p>
+            </div>
+            <div class="content-foo">
+                <h4>Direcci&oacute;n</h4>
+                <p>Av. Esq. Blanca 501, Maipú</p>
+            </div>
+            <div class="content-foo">
+                <h4>Síguenos..</h4>
+                <a href="https://www.facebook.com" target="_blank"><img src="{% static 'core/img/iconofb.jpg'%}" width="18px"></a>
+                <a href="https://www.instagram.com/" target="_blank"><img src="{% static 'core/img/iconoig.jpg'%}" width="18px"></a>
+                <a href="http://www.twitter.com/" target="_blank"><img src="{% static 'core/img/iconotwitter.jpg'%}" width="18px"></a>
+            </div>
+        </div>
+        <h2 class="titulo-final">&copy;David Bravo | Javier de la Jara | Nicolas Guilitraro | @Copyrigth Derechos reservados</h2>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    {% load static %}
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Free of Lice</title>
+    <link rel="icon" href="img/perro-pastor.png"/>
+    <link rel="stylesheet" href="{% static 'core/css/estilo.css'%}">
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="{% url 'home'%}">Inicio</a>
+            <a href="{% url 'somos'%}">Somos</a>
+            <a href="{% url 'galeria'%}">Galeria</a>
+            <a href="{% url 'formulario'%}">Contacto</a>
+            <a href="{% url 'mostrar'%}">Ingresados</a>
+            <a href="{% url 'consumo'%}">API</a>
+        </nav>
+        <section class="textos-header">
+            <h1>Galeria de productos que puedes encontrar</h1>
+            <h2>¡Sólo aqui en Free of Lice!</h2>
+        </section>
+        <div class="wave" style="height: 150px; overflow: hidden;" ><svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;"><path d="M0.00,49.99 C211.85,177.14 274.49,-61.67 500.00,49.99 L500.00,150.00 L0.00,150.00 Z" style="stroke: none; fill: #fff;"></path></svg></div>        
+    </header>
+    <main>
+        {% load static %}
+        <section class="portafolio">
+            <div class="contenedor">
+                <h2 class="titulo">Productos</h2>
+                <div class="galeria-port">
+                    <div class="imagen-port">
+                        <img src="{% static 'core/img/Collar-fino.jpg'%}" alt="">
+                        <div class="hover-galeria">
+                            <h1>$5.990</h1>
+                            <img src="{% static 'core/img/target.jpg'%}" alt="">
+                            <p>¡Collar fino para gat@s, de alta calidad y reforzado!</p>
+                        </div>
+                    </div>
+                    <div class="imagen-port">
+                        <img src="{% static 'core/img/Perro-cartera.png'%}" alt="">
+                        <div class="hover-galeria">
+                            <h1>$14.990</h1>
+                            <img src="{% static 'core/img/target.jpg'%}" alt="">
+                            <p>¡Mochila morral porta perros, especial para transportar a tu mascota!</p>
+                        </div>
+                    </div>
+                    <div class="imagen-port">
+                        <img src="{% static 'core/img/quita-peluzas.png'%}" alt="">
+                        <div class="hover-galeria">
+                            <h1>$6.990</h1>
+                            <img src="{% static 'core/img/target.jpg'%}" alt="">
+                            <p>¡Removedor de pelo reutilizable para mascotas, de alta calidad!</p>
+                        </div>
+                    </div>
+                    <div class="imagen-port">
+                        <img src="{% static 'core/img/churu.png'%}" alt="">
+                        <div class="hover-galeria">
+                            <h1>$11.990</h1>
+                            <img src="{% static 'core/img/target.jpg'%}" alt="">
+                            <p>¡Inaba churu, variedades de atun especial para tu michi!</p>
+                        </div>
+                    </div>
+                    <div class="imagen-port">
+                        <img src="{% static 'core/img/rasguñador.png'%}" alt="">
+                        <div class="hover-galeria">
+                            <h1>$10.000</h1>
+                            <img src="{% static 'core/img/target.jpg'%}" alt="">
+                            <p>¡Cat Love Rasguñador Rampa, proporciona un área de rascado seguro para tu felino. Viene con catnip (hierba gatera) para fomentar la atracción de tu peludo amigo!</p>
+                        </div>
+                    </div>
+                    <div class="imagen-port">
+                        <img src="{% static 'core/img/cama.png'%}" alt="">
+                        <div class="hover-galeria">
+                            <h1>$17.990</h1>
+                            <img src="{% static 'core/img/target.jpg'%}" alt="">
+                            <p>¡Cama acolchada, esta cama para perros es de material lavable con costuras reforzadas. Ideal para un mejor descanso de tu mascota!</p>
+                        </div>
+                    </div>
+                    <div class="imagen-port">
+                        <img src="{% static 'core/img/X_tidy-cat-scoop-lwt-bidon-29385.png'%}" alt="">
+                        <div class="hover-galeria">
+                            <h1>$12.990</h1>
+                            <img src="{% static 'core/img/target.jpg'%}" alt="">
+                            <p>¡Arena para gatos formula 24/7 patentada para activarse con la humedad, encapsulando olores en bolitas compactas y livianas, que se pueden remover facilmente, dejando tu casa limpia y fresca por mas tiempo, justo como a ti y a tu gato le gusta!</p>
+                        </div>
+                    </div>
+                    <div class="imagen-port">
+                        <img src="{% static 'core/img/catnip.png'%}" alt="">
+                        <div class="hover-galeria">
+                            <h1>$1.990</h1>
+                            <img src="{% static 'core/img/target.jpg'%}" alt="">
+                            <p>¡La hierba gatera ubicada por el nombre de catnip, hierba de los gatos, menta de gatos. A medida que aumentan sus efectos, se volcarán sobre sí mismos, cazarán ratones imaginarios y quedarán en una especie de éxtasis!</p>
+                        </div>
+                    </div>
+                    <div class="imagen-port">
+                        <img src="{% static 'core/img/arnes.png'%}" alt="">
+                        <div class="hover-galeria">
+                            <h1>$5.990</h1>
+                            <img src="{% static 'core/img/target.jpg'%}" alt="">
+                            <p>¡Mascan Arnés Anti-Pull es un arnés anti-tirones ya que evita que tu mascota te lleve a tirones y así poder  pasear a tu perro por donde tú lo desees sin problemas!</p>
+                        </div>
+                    </div>
+                    <div class="imagen-port">
+                        <img src="{% static 'core/img/hamster.png'%}" alt="">
+                        <div class="hover-galeria">
+                            <h1>$5.500</h1>
+                            <img src="{% static 'core/img/target.jpg'%}" alt="">
+                            <p>¡Alimento equilibrado para hamsters, rica en vegetales y diversos cereales!</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="contenedor-footer">
+            <div class="content-foo">
+                <h4>Tel&eacute;fono</h4>
+                <p>+56987543562</p>
+            </div>
+            <div class="content-foo">
+                <h4>Correo</h4>
+                <p>freeoflice@gmail.cl</p>
+            </div>
+            <div class="content-foo">
+                <h4>Direcci&oacute;n</h4>
+                <p>Av. Esq. Blanca 501, Maipú</p>
+            </div>
+            <div class="content-foo">
+                <h4>Síguenos..</h4>
+                <a href="https://www.facebook.com" target="_blank"><img src="{% static 'core/img/iconofb.jpg'%}" width="18px"></a>
+                <a href="https://www.instagram.com/" target="_blank"><img src="{% static 'core/img/iconoig.jpg'%}" width="18px"></a>
+                <a href="http://www.twitter.com/" target="_blank"><img src="{% static 'core/img/iconotwitter.jpg'%}" width="18px"></a>
+            </div>
+        </div>
+        <h2 class="titulo-final">&copy;David Bravo | Javier de la Jara | Nicolas Guilitraro | @Copyrigth Derechos reservados</h2>
+    </footer>
+</body>
+</html>
