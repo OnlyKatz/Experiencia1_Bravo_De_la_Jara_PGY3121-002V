@@ -41,6 +41,7 @@ INSTALLED_APPS = [
     'rest_vehiculo',
     'rest_formulario',
     'rest_framework',
+    'rest_framework.authtoken',
 ]
 
 MIDDLEWARE = [
@@ -70,6 +71,14 @@ TEMPLATES = [
         },
     },
 ]
+
+REST_FRAMEWORK = {
+    'DEFAULT_AUTHENTICATION_CLASSES':[
+        'rest_framework.authentication.TokenAuthentication',
+    ],
+}
+
+
 
 WSGI_APPLICATION = 'TestDjango.wsgi.application'
 

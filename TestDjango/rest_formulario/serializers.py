@@ -5,3 +5,4 @@ class FormularioSerializer(serializers.ModelSerializer):
         model = Formulario
         fields = ['nombre','apellido','correo','rut','telefono','ciudad','comentario']
         
+        
